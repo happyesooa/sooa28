@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>신데렐라를 도와줘!</title>
+<style type="text/css">
+
+	body {cursor:url('https://happyesooa.github.io/sooa28/m.png'),auto;}
+	#img1 { margin-top:300px; margin-left:650px; height: 250px;}
+
+</style>
+</head>
+
+<body style="background-image:url('back.png');"> 
+		<audio id="mysound"> <source src="n.mp3" type="audio/mp3"></audio>
+
+		<script> 
+		var imgindex=0; 
+		function image_onclick(){ 
+		  mysound.play();
+		  var arrImage=new Array("1.png", "2.gif", "3.gif", "4.gif", "5.gif","6.gif","7.gif","8.gif"); 
+		  var imgSource=document.getElementById("img1"); 
+		  imgindex++; 
+		  imgSource.src=arrImage[imgindex%arrImage.length]; 
+		  alert(imgSource.src)} 
+		</script> 
+
+
+
+	
+<body>  
+<img id="img1" src="1.png" onclick="image_onclick()" /> 
+</body>  
+</html> 
